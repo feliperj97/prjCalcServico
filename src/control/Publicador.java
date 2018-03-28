@@ -6,7 +6,7 @@ public class Publicador {
 
 	public static void main(String[] args) {
 		
-		Endpoint.publish("http://localhost:10001/calculadora", new Calculadora());
+		Endpoint.publish("http://localhost:10002/calculadora", new Calculadora());
 
 	}
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://control/" xmlns:tns="http://control/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Dividir" type="tns:Dividir"/>
+
+  <xs:element name="DividirResponse" type="tns:DividirResponse"/>
+
+  <xs:element name="Multiplicar" type="tns:Multiplicar"/>
+
+  <xs:element name="MultiplicarResponse" type="tns:MultiplicarResponse"/>
+
+  <xs:element name="Somar" type="tns:Somar"/>
+
+  <xs:element name="SomarResponse" type="tns:SomarResponse"/>
+
+  <xs:element name="Substrair" type="tns:Substrair"/>
+
+  <xs:element name="SubstrairResponse" type="tns:SubstrairResponse"/>
+
+  <xs:complexType name="Somar">
+    <xs:sequence>
+      <xs:element name="a" type="xs:float"/>
+      <xs:element name="b" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SomarResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Multiplicar">
+    <xs:sequence>
+      <xs:element name="a" type="xs:float"/>
+      <xs:element name="b" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MultiplicarResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Dividir">
+    <xs:sequence>
+      <xs:element name="a" type="xs:float"/>
+      <xs:element name="b" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DividirResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Substrair">
+    <xs:sequence>
+      <xs:element name="a" type="xs:float"/>
+      <xs:element name="b" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SubstrairResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
